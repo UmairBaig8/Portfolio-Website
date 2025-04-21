@@ -12,10 +12,6 @@
         "icon": "https://img.icons8.com/color/48/000000/spring-logo.png"
     },
     {
-        "name": "FastAPI",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
-    },
-    {
         "name": "Python",
         "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
     },
@@ -48,10 +44,6 @@
         "icon": "https://img.icons8.com/color/48/000000/typescript.png"
     },
     {
-        "name": "TailwindCSS",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
-    },
-    {
         "name": "Git",
         "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
@@ -70,9 +62,5 @@
     {
         "name": "Kubernetes",
         "icon": "https://img.icons8.com/color/48/000000/kubernetes.png"
-    },
-    {
-        "name": "Streamlit",
-        "icon": "https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg"
     }
 ]
