@@ -45,7 +45,7 @@ $(document).ready(function () {
         });
         event.preventDefault(); // Prevent default form submission
 
-        emailjs.sendForm('contact_service', 'template_contact', this)
+        emailjs.sendForm("service_3ae3sw1","template_rbnj02f", this)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 $("#contact-form")[0].reset(); // Reset the form
