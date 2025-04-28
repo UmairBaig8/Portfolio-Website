@@ -38,19 +38,22 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("public_8DG7cTcXqCvpNaWk");
+    $("#contact-form").on("submit", function (event) {
+        // Initialize EmailJS with your Public Key
+        emailjs.init({
+            publicKey: "8DG7cTcXqCvpNaWk-"
+        });
+        event.preventDefault(); // Prevent default form submission
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('contact_service', 'template_contact', this)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
+                $("#contact-form")[0].reset(); // Reset the form
                 alert("Form Submitted Successfully");
             }, function (error) {
                 console.log('FAILED...', error);
                 alert("Form Submission Failed! Try Again");
             });
-        event.preventDefault();
     });
     // <!-- emailjs to mail contact form data -->
 
